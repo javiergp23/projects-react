@@ -2,6 +2,7 @@ div{
     display: flex;
     flex-direction: column;
     margin: auto;
+    text-align: center;
 
 }
 
@@ -16,7 +17,7 @@ div{
 
 .span2{
     position: absolute;
-    margin-top: 75%;
+    margin-top: 70%;
     color: white;
     font-size: 40px;
     word-wrap: break-word; /* Ajusta el texto para que salte a una nueva línea */
