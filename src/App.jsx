@@ -30,9 +30,9 @@ function App(){
       <input onChange={onChangeLinea1} type="text"  placeholder="linea 1"/> <br />
       <input onChange={onChangeLinea2} type="text" placeholder="linea 2"/> <br />
       <button>Exportar</button>
-      <div>
-        <span>{linea1}</span>
-        <span>{linea2}</span>
+      <div className='container-text'>
+        <span className='span1'>{linea1}</span>
+        <span className='span2'>{linea2}</span>
         <img src={`/${imagen}.jpg`} alt="" />
       </div>
     </div>

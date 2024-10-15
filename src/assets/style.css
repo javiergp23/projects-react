@@ -4,3 +4,29 @@ div{
     margin: auto;
 
 }
+
+.span1{
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    word-wrap: break-word; /* Ajusta el texto para que salte a una nueva línea */
+    word-break: break-word
+}
+
+.span2{
+    position: absolute;
+    margin-top: 75%;
+    color: white;
+    font-size: 40px;
+    word-wrap: break-word; /* Ajusta el texto para que salte a una nueva línea */
+    word-break: break-word
+}
+
+.container-text{ 
+    align-items: center;
+}
+
+img{
+    width: 450px;
+}
