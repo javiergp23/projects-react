@@ -1,24 +1,41 @@
+import {useState} from 'react';
+import './assets/style.css'
 function App(){
+  const [linea1, setLinea1] = useState('');
+  const [linea2, setLinea2] = useState('');
+  const [imagen, setImagen] = useState('');
+
+  const onChangeLinea1 = (event) => {
+    setLinea1(event.target.value)
+  }
+  const onChangeLinea2 = (event) => {
+    setLinea2(event.target.value)
+  }
+  const onChangeImagen = (event) => {
+    setImagen(event.target.value)
+  }
+  
   return(
-    <>
+    <div>
       <h1>App</h1>
-      <select name="" id="">
+      <select onChange={onChangeImagen} name="" id="">
         <option value="fire">Casa en llamas</option>
         <option value="futurama">Futurama</option>
         <option value="history">History Channel</option>
         <option value="matrix">Matrix</option>
         <option value="philosoraptor">Philosoraptor</option>
-        <option value="samart">Smart Guy</option>
+        <option value="smart">Smart Guy</option>
       </select>
       <br/>
-      <input type="text"  placeholder="linea 1"/> <br />
-      <input type="text" placeholder="linea 2"/> <br />
+      <input onChange={onChangeLinea1} type="text"  placeholder="linea 1"/> <br />
+      <input onChange={onChangeLinea2} type="text" placeholder="linea 2"/> <br />
       <button>Exportar</button>
       <div>
-        <span>Linea 1</span>
-        <span>Linea 2</span>
+        <span>{linea1}</span>
+        <span>{linea2}</span>
+        <img src={`/${imagen}.jpg`} alt="" />
       </div>
-    </>
+    </div>
   )  
 }
 
